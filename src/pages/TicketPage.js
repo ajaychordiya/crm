@@ -194,8 +194,6 @@ const TicketPage = ({ editMode }) => {
                 </select>
               </>
             )}
-
-            <input type="submit" />
           </section>
 
           <section>
@@ -222,6 +220,8 @@ const TicketPage = ({ editMode }) => {
                 <img src={formData.avatar} alt="image" />
               )}
             </div>
+
+            <input type="submit" />
           </section>
         </form>
       </div>

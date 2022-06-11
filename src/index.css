@@ -154,7 +154,7 @@ nav .icon {
 /* ----- Ticket ------ */
 
 .ticket {
-  padding: 30px;
+  padding: 20px;
   width: 100%;
 }
 
@@ -170,18 +170,18 @@ nav .icon {
 .ticket form section {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 10px 20px;
   width: 500px;
   outline: none;
 }
 
 .ticket form label {
-  margin: 20px 0 0 0;
+  margin: 20px 0 0 5px;
 }
 
 .ticket form input,
 select {
-  padding: 10px;
+  padding: 15px;
   font-size: 15px;
   border-radius: 10px;
   border: 1.5px solid rgb(218, 218, 218);
@@ -207,4 +207,95 @@ select {
 
 .ticket .img-preview img {
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav {
+    background-color: rgb(43, 43, 63);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  nav .logo-container,
+  nav .controls-container {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav .icon {
+    color: rgb(255, 255, 255);
+    margin-right: 15px;
+    padding: 0;
+  }
+
+  .ticket-card {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .ticket-card #link > * {
+    background-color: rgb(234, 234, 234);
+    margin: 2px;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ticket-card #link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .ticket-card .delete-block {
+    width: 100%;
+    height: 57px;
+  }
+  .ticket-card .progress-bar {
+    width: 79%;
+  }
+  .ticket-card .ticket-color {
+    width: auto;
+    height: 59px;
+    margin: 2px;
+  }
+
+  .dashboard .ticket-container {
+    min-height: 100vh;
+  }
+  .dashboard {
+    padding: 20px;
+    width: 90%;
+  }
+  .ticket form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ticket form section {
+    width: 100%;
+    margin: 10px 6px;
+  }
+  h1 {
+    text-align: center;
+  }
 }

@@ -51,6 +51,7 @@ const Dashboard = () => {
                     ticket={ticket}
                   />
                 ))}
+              <hr />
             </div>
           ))}
       </div>
