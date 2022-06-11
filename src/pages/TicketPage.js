@@ -113,7 +113,7 @@ const TicketPage = ({ editMode }) => {
                 type="radio"
                 onChange={changeHandler}
                 value={1}
-                checked={formData.priority === 1}
+                checked={Number(formData.priority) === 1}
               />
               <label htmlFor="priority-1">1</label>
               <input
@@ -122,7 +122,7 @@ const TicketPage = ({ editMode }) => {
                 type="radio"
                 onChange={changeHandler}
                 value={2}
-                checked={formData.priority === 2}
+                checked={Number(formData.priority) === 2}
               />
               <label htmlFor="priority-2">2</label>
               <input
@@ -131,7 +131,7 @@ const TicketPage = ({ editMode }) => {
                 type="radio"
                 onChange={changeHandler}
                 value={3}
-                checked={formData.priority === 3}
+                checked={Number(formData.priority) === 3}
               />
               <label htmlFor="priority-3">3</label>
               <input
@@ -140,7 +140,7 @@ const TicketPage = ({ editMode }) => {
                 type="radio"
                 onChange={changeHandler}
                 value={4}
-                checked={formData.priority === 4}
+                checked={Number(formData.priority) === 4}
               />
               <label htmlFor="priority-4">4</label>
               <input
@@ -149,7 +149,7 @@ const TicketPage = ({ editMode }) => {
                 type="radio"
                 onChange={changeHandler}
                 value={5}
-                checked={formData.priority === 5}
+                checked={Number(formData.priority) === 5}
               />
               <label htmlFor="priority-5">5</label>
             </div>
@@ -221,7 +221,7 @@ const TicketPage = ({ editMode }) => {
               )}
             </div>
 
-            <input type="submit" />
+            <input type="submit" className="btn" />
           </section>
         </form>
       </div>
